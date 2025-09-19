@@ -115,6 +115,7 @@
 		\end{enumerate}
 	\item{\textcolor{for}{\textbf{Problem 4}}}
 		\begin{enumerate}[label=(\alph*)]
+
 			\item Assume for the sake of contradiction that there are two identity elements $e$ and $\acute{e}$, we get the contradiction by just
 			  applying the definition of identity element on each:
 			  \begin{align*}
@@ -123,7 +124,7 @@
 						e & \acute{e}\text{ is identity} \\
 						\acute{e} & e \text{ is identity}
 					\end{array}\right.
-					\Longrightarrow e=\acute{e}
+				\Longrightarrow e=\acute{e}
 			  \end{align*}
 			  Which contradict so the identity element must be unique $\blacksquare$\\[5pt]
 			  Assume for the sake of contradiction 
@@ -135,15 +136,17 @@
 				\end{array}\right. \xrightarrow[\text{identity element}]{\text{uniqueness of}}
 				m(x,x_{1}^{-1}) = m(x,x_{2}^{-1}) \Rightarrow x_{1}^{-1} = x_{2}^{-1} = x^{-1}
 			  \end{align*}
-		  \item We need to show (I)-Injectivity and (II)-Surjectivity
+
+		        \item We need to show (I)-Injectivity and (II)-Surjectivity
 			  \begin{enumerate}[label=(\Roman*)]
 				  \item  Assume that $hg = \acute{h}g$ by multiplying $g^{-1}$ to the both sides of equation we have $h=\acute{h}$.
 				  \item Take arbitrary element $h\in G$ we claim that $g^{-1}h$ is the element that maps under the function $m_g(h)$ to
 					  the element $h$. To prove the claim we have $m_g(g^{-1}h) = gg^{-1}h = h$ as desired.
 			  \end{enumerate}
 			  So function is both injective and surjective together means that the function is Bijection $\blacksquare$
-	  \newpage
-		  \item
+			  \newpage
+
+		        \item
 			  \begin{enumerate}[label=(\Roman*)]
 				  \item Closed under operator: This is easy to see that $ax+bz, \cdots , cy+dt$ are real numbers\\
 					  since $a,b,c,d,x,y,z,t\in\mathbb{R}$
@@ -157,15 +160,18 @@
 					\end{array}\right.
 					\Rightarrow A \times B \in GL_2(\mathbb{R})
 					\end{align*}
-				\item Existence of Inverse: This follows immediately from the fact the determinant is non-zero and basic Linear-Algebra.
+				  \item 
+				  	Existence of Inverse: This follows immediately from the fact the determinant is non-zero and basic Linear-Algebra.
 					Identity element is just identity matrix $I_2$ 
-				\begin{align*}
-					&A = \left(\begin{matrix} a & b \\ c & d \end{matrix}\right)
-					&&A^{-1} = \frac{1}{ad-bc}\left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)=
-					\frac{1}{1} \left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)=
-					\left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)
-				\end{align*}
-				\item $(A \times B) \times C = A \times (B \times C)$: This is easy to verify by Linear-Algebra. Just write it down 
+					\begin{align*}
+						&A = \left(\begin{matrix} a & b \\ c & d \end{matrix}\right)
+						&&A^{-1} = \frac{1}{ad-bc}\left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)=
+						\frac{1}{1} \left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)=
+						\left(\begin{matrix} d & -b \\ -c & a \end{matrix}\right)
+					\end{align*}
+
+				  \item 
+					$(A \times B) \times C = A \times (B \times C)$: This is easy to verify by Linear-Algebra. Just write it down 
 					it is straightforward.
 			  \end{enumerate}
 			  This is not a cummutative group. Counterexample is as follows:
@@ -176,7 +182,8 @@
 				\left(\begin{matrix} 2 & 1 \\ 1 & 1 \end{matrix}\right) \left(\begin{matrix} 1 & -1 \\ 1 & 1 \end{matrix}\right)=
 				\left(\begin{matrix} 3 & -1 \\ 2 & 0 \end{matrix}\right)	
 			  \end{align*}
-			  \item
+
+			\item
 				  \begin{enumerate}[label=(\Roman*)]
 					  \item Closed under operator: $\overline{a} \times  \overline{b} = \overline{a \times b}$, Thus it is closed.
 					  \item Identity element is : $\overline{1}$ and inverse for every element exists since $p$ is considered to be prime:
@@ -186,10 +193,12 @@
 					\item $\overline{a} \times \left(\overline{b} \times \overline{c}\right) = \left(\overline{a} \times \overline{b}\right) \times \overline{c}$: which is trivially true by the definition.\\
 				  \end{enumerate}
 				  Under addition is similar.
-			  \item No it is not closed under operator: $\overline{3} \times \overline{5} = \overline{0}$\\
+
+			\item No it is not closed under operator: $\overline{3} \times \overline{5} = \overline{0}$\\
 				  The largest prime number before $15$ is $13$ so $\frac{\mathbb{Z}}{13\mathbb{Z}}\equiv \mathbb{F}_{13}$ 
 				  is the maximal subset of 
 				$\frac{\mathbb{Z}}{15\mathbb{Z}}$ which is a group under multiplication.
+
 			\item We know that $\varphi$ is a multiplicative function. Let's evaluate the $\varphi$ for prime values:
 				\begin{align*}
 						\varphi(p) &= \#\{1,\cdots,p-1\} = p-1\\
@@ -210,6 +219,7 @@
 					{\left(1-\frac{1}{p_i}\right)}
 				\end{align*}
 		\end{enumerate}
+
 	\item{\textcolor{for}{\textbf{Problem 5}}}
 		\begin{enumerate}[label=(\alph*)]
 		\item
@@ -218,21 +228,61 @@
 			$d \times k = \varphi(N)$, Hence $a^{\varphi(N)} \stackrel{N}{\equiv} a^{d. k} \stackrel{N}{\equiv}1$
 		\item
 			\begin{align*}
-				31 &= 7(4) + 3 \Rightarrow && 3=31 + 7(-4) \\ 
-				7 &= 3(2) + 1 \Rightarrow && 1=7  + 3(-2)
+				30 &= 7(4) + 2 \Rightarrow && 2=30 + 7(-4) \\ 
+				7 &= 2(3) + 1 \Rightarrow && 1=7  + 2(-3)
 			\end{align*}
 			\begin{align*}
-				1 &= 7 + \left[ 31 + 7(-4) \right] (-2) = 31(-2) + 7(9)
+				1 &= 7 + \left[ 30 + 7(-4) \right] (-3) = 30(-3) + 7(13)
 			\end{align*}
-			Hence inverse of $7$ modulo $31$ is $13$ i.e $7 \times 9\stackrel{31}{\equiv}1$\\
+			Hence inverse of $7$ modulo $30$ is $13$, i.e $7 \times 13\stackrel{30}{\equiv}1$\\
 			\begin{align*}
-				m^7 \stackrel{31}{\equiv} x \Rightarrow \left(m^{7}\right)^{e} \stackrel{31}{\equiv} x^{e} \Rightarrow
-				7 \times e \stackrel{\varphi(31)}{\equiv}1 \Rightarrow 
-				\xi \iota
+				&m^7 \stackrel{31}{\equiv} x \Rightarrow \left(m^{7}\right)^{e} \stackrel{31}{\equiv} x^{e} \Rightarrow
+				7 \times e \stackrel{\varphi(31)}{\equiv}1 \Rightarrow  7 \times e \stackrel{30}{\equiv}1 \Rightarrow e = 13\\[5pt]
+				&\hspace{2.5cm} \left(m^7\right)^{13} \stackrel{31}{\equiv}m \stackrel{31}{\equiv}x^{13}
 			\end{align*}
 		\end{enumerate}
+		\hrule
 
 	\item{\textcolor{for}{\textbf{Problem 6}}}
+		\begin{enumerate}[label=(\alph*)]
+			\item Assume that $g\in G$ with $\phi(g)=h\in H$ then by definition of identity element we know that $g = 1_{G} *_{G} g$
+				Hence $\phi(g) = \phi(1_{G} *_{G} g) = \phi(1_{G}) *_{H} h = h$ the last equation establish that 
+				$\phi(1_{G}) = 1_{H}$ $\blacksquare$
+			\item 
+				\begin{align*}
+					1_G = g *_{{}_{G}} g^{-1}\ \xrightarrow{\phi} \phi(1_{{}_{G}}) = 1_{{}_{H}} = \phi(g) *_{{}_{H}} \phi(g^{-1})
+					\Rightarrow \phi(g^{-1}) = \left.\phi(g)\right.^{-1}\
+				\end{align*}
+			\item Obviously $\phi(G)\subseteq H$ only thing we need to show is that $\phi(G)$ is group under the operation of group $H$.
+				Just for easier writing assume that operator for $G$ and $H$ are $*$, $\#$, respectively
+				\begin{enumerate}[label=(\textbf{\Roman*})]
+					\item{\textbf{Closed under Operator}} \\
+						Assume for the sake of contradiction that this is not the case, i.e. 
+						$h_1, h_2\in \phi(G)$and $g_1, g_2 \in G$ are related elements, but $h_1 \# h_2 \not\in \phi(G)$:
+						Because $G$ is group $g_1*g_2\in G$ and Hence $\phi(g_1 * g_2) = h_1 \# h_2$ should be in
+						$\phi(G)$ by definition of $\phi$ which contradicts.
+					\item {\textbf{Associativity :}} \\
+						Is true in $H$ so it is true in $\phi(G)\subseteq H$.
+					\item {\textbf{Identity Element :}} By part (a)
+					\item {\textbf{Inverse Element :}} By part (b) 
+				\end{enumerate}
+			\item
+				\begin{enumerate}[label=(\textbf{\Roman*})]
+					\item{\textbf{Closed under Operator :}} \\
+						Assume $a,b \in \ker(\phi)$ then $\phi(a*b)= \phi(a)\ \#\ \phi(b) = 1_{{}_{H}}\ \#\ 1_{{}_{H}} = 1_{{}_{H}}$.
+						Thus $a*b\in \ker(\phi)$.
+					\item {\textbf{Associativity :}} Quite Obvious.
+					\item {\textbf{Inverse Element :}} \\
+						If $a\in \ker(\phi)$ then it's inverse is $\phi(a^{-1}) = \left.\phi(a)\right.^{-1}$
+						$= \left.1_{{}_{H}}\right.^{-1} = 1_{{}_{H}}$ which means $a^{-1} \in \ker(\phi)$
+					\item {\textbf{Identity Element :}} By definition $1_{{}_{G}} \in \ker(\phi)$ 
+				\end{enumerate}
+				\textbf{Prove that $\ker(\phi)$ is normal subgroup of $G$}: Assume $a\in\ker(\phi)$ and $g\in G$
+				\begin{align*}
+					\phi(g * a * g^{-1}) = \phi(g)\ \#\ \phi(a)\ \#\ \left.\phi(g)\right.^{-1} = \phi(g)\ \#\ 1_{{}_{H}}\ \#\ \left.\phi(g)\right.^{-1} = 1_{{}_{H}}
+				\end{align*}
+				Which means $g*a*g^{-1} \in \ker{\phi}$ for every choice of $g\in G$ which by definition means that $\ker(\phi) \triangleleft G$
+		\end{enumerate}
 	\item{\textcolor{for}{\textbf{Problem 7}}}
 	\item{\textcolor{for}{\textbf{Problem 8}}}
 \end{itemize}
