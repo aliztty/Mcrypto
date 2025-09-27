@@ -266,9 +266,9 @@
 					\item {\textbf{Identity Element :}} By part (a)
 					\item {\textbf{Inverse Element :}} By part (b) 
 				\end{enumerate}
-			\item
+			\item{\textbf{($\ker{\phi}\leq G$) also ($\ker{\phi}\unlhd G$) :}}
 				\begin{enumerate}[label=(\textbf{\Roman*})]
-					\item{\textbf{Closed under Operator :}} \\
+					\item{\textbf{Closed under Operator :}} (Emptyness of $\ker{\phi}$ is because $1\in\ker{\phi}$) \\
 						Assume $a,b \in \ker(\phi)$ then $\phi(a*b)= \phi(a)\ \#\ \phi(b) = 1_{{}_{H}}\ \#\ 1_{{}_{H}} = 1_{{}_{H}}$.
 						Thus $a*b\in \ker(\phi)$.
 					\item {\textbf{Associativity :}} Quite Obvious.
@@ -277,11 +277,29 @@
 						$= \left.1_{{}_{H}}\right.^{-1} = 1_{{}_{H}}$ which means $a^{-1} \in \ker(\phi)$
 					\item {\textbf{Identity Element :}} By definition $1_{{}_{G}} \in \ker(\phi)$ 
 				\end{enumerate}
-				\textbf{Prove that $\ker(\phi)$ is normal subgroup of $G$}: Assume $a\in\ker(\phi)$ and $g\in G$
+				\textbf{Prove that $\ker(\phi)$ is normal subgroup of $G$}: \\Assume $a\in\ker(\phi)$ and $g\in G$
 				\begin{align*}
 					\phi(g * a * g^{-1}) = \phi(g)\ \#\ \phi(a)\ \#\ \left.\phi(g)\right.^{-1} = \phi(g)\ \#\ 1_{{}_{H}}\ \#\ \left.\phi(g)\right.^{-1} = 1_{{}_{H}}
 				\end{align*}
 				Which means $g*a*g^{-1} \in \ker{\phi}$ for every choice of $g\in G$ which by definition means that $\ker(\phi) \triangleleft G$
+			\item {\textbf{Make $G/\ker{(\phi)}$ to a group.}}\\
+				Assume that $(\ker{\phi}:=N)$ which is a normal subgroup of $G$ by the previous parts, we need to define a multiplication
+				on $G/N$, let's define it as follows:
+				\begin{align*}
+					&(Ng) (Nh) = N(gh)  &&(g,h\in G)
+				\end{align*}
+				Suppose that we have different representives for the same cosets, i.e. $Ng = Ng'$ and $Nh = Nh'$
+				We need to show that $N(gh) = N(g'h')$
+				\begin{align*}
+					\left\{\begin{array}{ll}
+						Ng = Ng' \rightarrow& g(g')^{-1}=n_1 \in N \\
+						Nh = Nh' \rightarrow& h(h')^{-1}=n_2 \in N
+					\end{array}\right. \Longrightarrow
+					(gh)(g'h')^{-1} = (gh)(h')^{-1}(g')^{-1}	
+					\xrightarrow{N\unlhd G}\ \in N
+				\end{align*}
+				Thus $N(gh) = N(g'h')$ which means that our multiplication is well-defined. This multiplication make our set to a group
+				is straightforward by definition.
 		\end{enumerate}
 	\item{\textcolor{for}{\textbf{Problem 7}}}
 	\item{\textcolor{for}{\textbf{Problem 8}}}
