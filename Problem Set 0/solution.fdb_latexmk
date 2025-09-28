@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1758970633.4268 "solution.xdv" "solution.pdf" "solution" 1758970633.60726 0
-  "solution.xdv" 1758970633.26939 106376 a687e4f5a7cd8d66a46cfc943a5d5709 "xelatex"
+["xdvipdfmx"] 1759058884.33168 "solution.xdv" "solution.pdf" "solution" 1759058884.52409 0
+  "solution.xdv" 1759058884.17354 107320 f99a0cec90dcd2c3f39cc8a297f524fa "xelatex"
   (generated)
   "solution.pdf"
   (rewritten before read)
-["xelatex"] 1758970631.58057 "solution.tex" "solution.xdv" "solution" 1758970633.60435 0
+["xelatex"] 1759058882.53305 "solution.tex" "solution.xdv" "solution" 1759058884.52114 0
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -112,6 +112,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpagemodern.sty" 1678227624 9016 8b9ad9b1a929dc3487c1eb71c549a7a0 ""
   "/usr/share/texlive/texmf-dist/tex/latex/libertinus-otf/libertinus-otf.sty" 1627070859 25475 bdc7b6750c5a452f35d3d9586eafab06 ""
   "/usr/share/texlive/texmf-dist/tex/latex/libertinus/libertinus.sty" 1588886646 847 72cf184b20824b2feeb984142363d988 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg" 1677530001 1829 d8258b7d94f5f955e70c623e525f9f45 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty" 1677530001 80947 75a96bb4c9f40ae31d54a01d924df2ff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty" 1677530001 77021 d05e9115c67855816136d82929db8892 ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty" 1656621545 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
   "/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1616101747 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
@@ -132,8 +135,8 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1758444358 8730058 aa0efe2262cd803109d31cfda6ca7008 ""
-  "solution.aux" 1758970633.26939 114 4ab967b11775f913780cd52f752d81cd "xelatex"
-  "solution.tex" 1758970630.62537 15744 eff89a76e72fae7cff8a05350cb12529 ""
+  "solution.aux" 1759058884.17254 114 4ab967b11775f913780cd52f752d81cd "xelatex"
+  "solution.tex" 1759058882.13952 15902 781d3be8e2ea6a54cba32d68a6df8df1 ""
   (generated)
   "solution.aux"
   "solution.log"

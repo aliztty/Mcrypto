@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Fedora 39) (preloaded format=xelatex 2025.9.21)  27 SEP 2025 14:27
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Fedora 39) (preloaded format=xelatex 2025.9.21)  28 SEP 2025 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,15 +387,37 @@ Package: lastpage2e 2023/03/07 v2.0a Decide which 2e lastpage version to use (HM
  (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
 Package: lastpagemodern 2023-03-07 v2.0a Refers to last page's name (HMM; JPG)
 ) 
-)) (/usr/share/texlive/texmf-dist/tex/latex/libertinus/libertinus.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count298
+\lst@gtempboxa=\box66
+\lst@token=\toks36
+\lst@length=\count299
+\lst@currlwidth=\dimen277
+\lst@column=\count300
+\lst@pos=\count301
+\lst@lostspace=\dimen278
+\lst@width=\dimen279
+\lst@newlines=\count302
+\lst@lineno=\count303
+\lst@maxwidth=\dimen280
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count304
+\lst@skipnumbers=\count305
+\lst@framebox=\box67
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/libertinus/libertinus.sty
 Package: libertinus 2020/05/06 v. 0.02 (Herbert Voss) Supports libertinus fonts for pdflatex/lualatex/xelatex
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks36
-\XKV@tempa@toks=\toks37
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 )
-\XKV@depth=\count298
+\XKV@depth=\count306
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/libertinus-otf/libertinus-otf.sty
 Package: libertinus-otf 2021/07/23 v. 0.29 (Herbert Voss) Supports libertinus fonts for lualatex and xelatex.
@@ -409,11 +431,11 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 Package: expl3 2023-02-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
-\g__graphics_track_int=\count299
-\l__pdf_internal_box=\box66
-\g__pdf_backend_object_int=\count300
-\g__pdf_backend_annotation_int=\count301
-\g__pdf_backend_link_int=\count302
+\g__graphics_track_int=\count307
+\l__pdf_internal_box=\box68
+\g__pdf_backend_object_int=\count308
+\g__pdf_backend_annotation_int=\count309
+\g__pdf_backend_link_int=\count310
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
@@ -426,20 +448,20 @@ Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count303
-\l__fontspec_language_int=\count304
-\l__fontspec_strnum_int=\count305
-\l__fontspec_tmp_int=\count306
-\l__fontspec_tmpa_int=\count307
-\l__fontspec_tmpb_int=\count308
-\l__fontspec_tmpc_int=\count309
-\l__fontspec_em_int=\count310
-\l__fontspec_emdef_int=\count311
-\l__fontspec_strong_int=\count312
-\l__fontspec_strongdef_int=\count313
-\l__fontspec_tmpa_dim=\dimen277
-\l__fontspec_tmpb_dim=\dimen278
-\l__fontspec_tmpc_dim=\dimen279
+\l__fontspec_script_int=\count311
+\l__fontspec_language_int=\count312
+\l__fontspec_strnum_int=\count313
+\l__fontspec_tmp_int=\count314
+\l__fontspec_tmpa_int=\count315
+\l__fontspec_tmpb_int=\count316
+\l__fontspec_tmpc_int=\count317
+\l__fontspec_em_int=\count318
+\l__fontspec_emdef_int=\count319
+\l__fontspec_strong_int=\count320
+\l__fontspec_strongdef_int=\count321
+\l__fontspec_tmpa_dim=\dimen281
+\l__fontspec_tmpb_dim=\dimen282
+\l__fontspec_tmpc_dim=\dimen283
  (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
@@ -448,9 +470,9 @@ Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
-\g__um_fam_int=\count314
-\g__um_fonts_used_int=\count315
-\l__um_primecount_int=\count316
+\g__um_fam_int=\count322
+\g__um_fonts_used_int=\count323
+\l__um_primecount_int=\count324
 \g__um_primekern_muskip=\muskip17
  (/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
 Requested font "[LibertinusSerif-Regular.otf]/OT" at 9.99997pt
@@ -1374,6 +1396,7 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\c@lstlisting=\count325
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
 (unicode-math)                `mathtools' package.
@@ -1531,12 +1554,12 @@ Requested font "[LibertinusSerif-Regular.otf]/OT:script=latn;language=dflt;+tnum
 enddocument/afterlastpage: lastpage setting LastPage.
 (./solution.aux) ) 
 Here is how much of TeX's memory you used:
- 21717 strings out of 478651
- 467305 string characters out of 5848366
- 1876018 words of memory out of 6000000
- 41463 multiletter control sequences out of 15000+600000
+ 22929 strings out of 478651
+ 485573 string characters out of 5848366
+ 1877018 words of memory out of 6000000
+ 42663 multiletter control sequences out of 15000+600000
  515956 words of font info for 91 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 116i,18n,151p,421b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,18n,151p,421b,814s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on solution.xdv (5 pages, 106376 bytes).
+Output written on solution.xdv (5 pages, 107320 bytes).
