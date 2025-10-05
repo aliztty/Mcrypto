@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, mathtools, fancyhdr, tikz, cancel, enumitem, lastpage, listings}
+\usepackage{libertinus}
+
+\definecolor{pen}  {RGB}{36,  41, 46}
+\definecolor{paper}{RGB}{197, 186, 175}
+        
+\definecolor{one}{RGB}{124, 87 , 53 }
+\definecolor{two}{RGB}{153, 94 , 65 }
+\definecolor{thr}{RGB}{174, 130, 87 }
+\definecolor{for}{RGB}{124, 53 , 54 }
+\definecolor{fiv}{RGB}{124, 123, 53 }
+\definecolor{six}{RGB}{87 , 53 , 124} 
+       
+
+\pagecolor{paper}
+\color{pen}
+
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[C]{\textbf{Matematical Cryptography}}
+\fancyhead[L]{  St.Name:Ali Zare}
+\fancyhead[R]{  Problem Set: 1 }
+\fancyfoot[C]{\thepage/\pageref{LastPage}}
+\fancyfoot[L]{Al}
+\fancyfoot[R]{IZ}
+\linespread{1.2}
+
+\newcommand{\ev}[1]{\stackrel{#1}{\equiv}}
+
+\begin{document}
+\begin{itemize}
+	\item{\textcolor{for}{\textbf{Problem 1}}}\\
+		Let's clearify the message space $\mathcal{M}$, key space $\mathcal{K}$, and cipher space $\mathcal{C}$.
+		For the Key space we have:
+		\begin{align*}
+			&\mathcal{K} = \{ 0, 1, \cdots, 25\} = \mathbb{Z}_{26}
+			&&|\mathcal{K}| = 26
+		\end{align*}
+		For the message and cipher text space, first we map each letter to a number as below:
+		\begin{align*}
+			0\iff A \quad 1\iff B \quad \cdots \quad \quad 25\iff Z
+		\end{align*}
+		Now we can conclude that the message ($\mathcal{M}$) and cipher ($\mathcal{C}$) space is the same and equal to:
+		\begin{align*}
+			\mathcal{M} = \mathcal{C} = \{ \text{All Possible String of Letters A-Z} \}
+		\end{align*}
+	\item{\textcolor{for}{\textbf{Problem 2}}}
+		\begin{enumerate}[label=(\alph*)]
+			\item
+				\begin{align*}
+					&\mathbf{Dec}_{k}(c_1,\cdots,c_n) = (m_1,\cdots,m_n)
+					&&\text{With} \quad m_i = (c_i - b)\times a^{-1}
+				\end{align*}
+			Becase we need the inverse of $a$, it must be a unit so we could use its inverse.
+			\item
+			BMVVK mapped to HELLO so we can conclude that:
+			\begin{align*}
+				&
+				B  \longleftrightarrow H \qquad
+				M  \longleftrightarrow E \qquad
+				V  \longleftrightarrow L \qquad
+				K  \longleftrightarrow O \\
+				&
+				1  \longleftrightarrow 7 \qquad
+				12 \longleftrightarrow 4 \qquad
+				21 \longleftrightarrow 11 \qquad
+				10 \longleftrightarrow 14 
+			\end{align*}
+			\begin{align*}
+				&c_1 \ev{26} a m_1 + b && 1\ \ev{26}  7\  (a) + b \\
+				&c_2 \ev{26} a m_2 + b && 12 \ev{26} 4\  (a) + b \\
+				&c_3 \ev{26} a m_3 + b && 11 \ev{26} 21 (a) + b \\
+				&c_5 \ev{26} a m_5 + b && 10 \ev{26} 14 (a) + b
+			\end{align*}
+			By two first equations we get $-3(a) \ev{26} 12 - 1$ which implies that $3a \ev{26} -11$ which leads us
+			to $3a \ev{26} 15$ and $a \ev{26} 5$, by putting this to each equations we get that $b \ev{26} 18$.
+			Hence we get $(a,b) \ev{26} (5, 18)$
+			\item
+				We have a decryption function with two unkown variables $a$ and $b$ which we need to recover to get the plain text.
+				We use the letter frequency which means that the two most common letters in our text is F and E respectively and in the
+				statistically perspective the two most common letters are A and T by mapping these two and knowing we need to recover two
+				unkown variables we can solve for them.
+				\begin{align*}
+					&\text{F} \longleftrightarrow \text{E} &&\text{E} \longleftrightarrow \text{T}\\
+					& (6) \longleftrightarrow  (5)  && (5) \longleftrightarrow  (20) 
+				\end{align*}
+				\begin{align*}
+					\left\{ \begin{array}{ll}
+							6 = 6a + b\\ 5 = 20a + b
+						\end{array}\right.
+				\end{align*}
+				This gives us $-15a \ev{26} 1$ which means $11a \ev{26} 1$ which means $a$ is the inverse of $11$ modular $26$
+				which is $19$, so $a \ev{26} 19$ which means $b \ev{26} 15$. By this we get the plaintext as follows:\\
+				" NEVERTRUSTAPEOPLEWITHTWOSECRETS ".
+		\end{enumerate}
+	\item{\textcolor{for}{\textbf{Problem 3}}}
+		\begin{enumerate}[label=(\roman*)]
+			\item Only using 26 letters:\\
+				function of encryption is $am+b$ with $a$ and $b$ as variables. By the condition that $a$ should be coprime with respect to
+				$26$ which makes possible values for $a$ to be $\varphi(26)=\varphi(13)\varphi(2) = (12)(1) = 12$ we have $12$ possibilities
+				for $a$ and $26$ possibilities for $b$ which gives us together $26 \times 12=312$ possibilities.
+			\item letters plus ( ? ) ( . ) ( , ) ( ! ):\\
+				In this case we are working with number $30 = 26 + 4$ with the same formula as previous part we have
+				$\varphi(30) = \varphi(3)\varphi(2)\varphi(5) = 2 \times 1 \times 4 = 8$ possibilities for $a$ and $30$ possibilities for
+				$b$ which gives us together $8 \times 30 = 240$ possibilities.
+		\end{enumerate}
+	\item{\textcolor{for}{\textbf{Problem 4}}}
+	\item{\textcolor{for}{\textbf{Problem 5}}}
+	\item{\textcolor{for}{\textbf{Problem 6}}}
+	\item{\textcolor{for}{\textbf{Problem 7}}}
+	\item{\textcolor{for}{\textbf{Problem 8}}}
+	\item{\textcolor{for}{\textbf{Problem 9}}}
+	\item{\textcolor{for}{\textbf{Problem 10}}}
+	\item{\textcolor{for}{\textbf{Problem 11}}}
+\end{itemize}
+\end{document}
