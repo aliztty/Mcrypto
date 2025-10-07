@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1759745283.78742 "solution.xdv" "solution.pdf" "solution" 1759745283.9524 0
-  "solution.xdv" 1759745283.6065 35880 6391474c438fd292a45aad42704e2766 "xelatex"
+["xdvipdfmx"] 1759840409.06752 "solution.xdv" "solution.pdf" "solution" 1759840409.26601 0
+  "solution.xdv" 1759840408.90696 37276 f327dadc3d6762fb3463bf0f1fb984c3 "xelatex"
   (generated)
   "solution.pdf"
   (rewritten before read)
-["xelatex"] 1759745281.66331 "solution.tex" "solution.xdv" "solution" 1759745283.95011 0
+["xelatex"] 1759840407.08319 "solution.tex" "solution.xdv" "solution" 1759840409.26363 0
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -164,9 +164,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1714953600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1758444358 8730058 aa0efe2262cd803109d31cfda6ca7008 ""
-  "solution.aux" 1759745283.6055 615 82c60dcef0936aefc8474bd0f595dca4 "xelatex"
-  "solution.out" 1759745283.5605 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "solution.tex" 1759745281.25048 5585 66c451c423e8e60960032d3085315189 ""
+  "solution.aux" 1759840408.90596 615 82c60dcef0936aefc8474bd0f595dca4 "xelatex"
+  "solution.out" 1759840408.85296 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "solution.tex" 1759840406.53694 5733 424c32409889bea0e560b4f668b3025f ""
   (generated)
   "solution.aux"
   "solution.log"
