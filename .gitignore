@@ -1,5 +1,2 @@
 # Compiled Tex files
 .Build/
-
-# PDF files
-*.pdf
